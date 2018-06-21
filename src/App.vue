@@ -1,6 +1,10 @@
 <template>
   <div id="wrap">
     <TheHeader/>
+    <div id="main-container" class="container main-container">
+      <router-view/>
+    </div>
+
     <TheFooter/>
   </div>
 </template>
@@ -13,7 +17,7 @@ import TheFooter from '@/components/layouts/TheFooter'
 export default {
   name: 'App',
   components: {
-    
+
     TheHeader,
 
     TheFooter
